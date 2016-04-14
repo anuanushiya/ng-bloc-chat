@@ -9,7 +9,6 @@
                 return messages.$add({
                     content: newMessageText,
                     roomID: room.$id,
-//                    sentAt: Firebase.ServerValue.TIMESTAMP,
                     sentAt: Date.now(),
                     username: $cookies.get('blocChatCurrentUser')
                 });

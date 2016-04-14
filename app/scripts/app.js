@@ -15,19 +15,31 @@
 
     function BlocChatCookies($modal, $cookies) {
 
+        $modal.openRegistrationModal = function(){
+            var modalInstance = $modal.open({
+                templateUrl: 'templates/registrationModal.html',
+                controller: 'LoginCtrl',
+                size: 'sm'
+            });
+        };
+
+        $modal.openRegistrationModal();
+
+
+/*
         if (!$cookies.get('blocChatCurrentUser') || $cookies.get('blocChatCurrentUser') === '') {
 
-            $modal.openUserModal = function(){
+            $modal.openLoginModal = function(){
                 var modalInstance = $modal.open({
-                    templateUrl: 'templates/createUserModal.html',
-                    controller: 'CreateUserCtrl',
+                    templateUrl: 'templates/loginModal.html',
+                    controller: 'LoginCtrl',
                     size: 'sm'
                 });
             };
 
             // display username modal
-            $modal.openUserModal();
-        }
+            $modal.openLoginModal();
+        } */
     }
 
     angular

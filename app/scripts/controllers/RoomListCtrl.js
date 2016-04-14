@@ -22,7 +22,6 @@
             // sendMessage() when user clicks "Send"
             $rootScope.sendMessage = function(newMessage) {
                 $rootScope.newMessage = {};
-                console.log(newMessage.text);
                 Message.send(newMessage.text, $rootScope.activeRoom);
             };
 

@@ -148,6 +148,7 @@ h2 .btn-group {
 
 /* End footer */
 
+
 /* Begin modal styles */
 
 .modal-wrapper {
@@ -172,6 +173,7 @@ h2 .btn-group {
 
 .form-control {
     flex-grow: 1;
+    border-top: 1px solid #c0c0c0;
 }
 
 .modal-footer{
